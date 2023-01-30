@@ -1,5 +1,7 @@
 package ie.atu.week1;
 
+import java.util.Scanner;
+
 public class ArrayDemo {
     public static void main(String[] args) {
 
@@ -20,6 +22,10 @@ public class ArrayDemo {
         anArray[8] = 900;
         anArray[9] = 1000;
 
+        System.out.println("Enter a value: ");
+        Scanner myscan = new Scanner(System.in);
+        anArray[10] = myscan.nextInt();
+
         System.out.println("Element at index 0: " + anArray[0]);
         System.out.println("Element at index 1: " + anArray[1]);
         System.out.println("Element at index 2: " + anArray[2]);
@@ -30,6 +36,7 @@ public class ArrayDemo {
         System.out.println("Element at index 7: " + anArray[7]);
         System.out.println("Element at index 8: " + anArray[8]);
         System.out.println("Element at index 9: " + anArray[9]);
+        System.out.println("Element at index 10: " + anArray[10]);
     }
 
 }
