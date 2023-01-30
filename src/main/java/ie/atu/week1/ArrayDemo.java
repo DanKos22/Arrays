@@ -22,27 +22,24 @@ public class ArrayDemo {
         anArray[8] = 900;
         anArray[9] = 1000;
 
+        int indexValue = 0;
+
+        for(int value: anArray)
+        {
+            System.out.println("Element at index " + indexValue + " : " + value);
+            indexValue++;
+        }
+
+        Scanner myscan = new Scanner(System.in);
+
         try
         {
             System.out.println("Enter a value: ");
-            Scanner myscan = new Scanner(System.in);
             anArray[10] = myscan.nextInt();
-
-            System.out.println("Element at index 0: " + anArray[0]);
-            System.out.println("Element at index 1: " + anArray[1]);
-            System.out.println("Element at index 2: " + anArray[2]);
-            System.out.println("Element at index 3: " + anArray[3]);
-            System.out.println("Element at index 4: " + anArray[4]);
-            System.out.println("Element at index 5: " + anArray[5]);
-            System.out.println("Element at index 6: " + anArray[6]);
-            System.out.println("Element at index 7: " + anArray[7]);
-            System.out.println("Element at index 8: " + anArray[8]);
-            System.out.println("Element at index 9: " + anArray[9]);
-            System.out.println("Element at index 10: " + anArray[10]);
         }
         catch(ArrayIndexOutOfBoundsException e)
         {
-            System.out.println("You went outside your block");
+            System.out.println("You went outside your memory block");
         }
     }
 
